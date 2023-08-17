@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+			rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fighting game</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				padding: 0;
+				margin: 0;
+				box-sizing: inherit;
+			}
+			html {
+				font-size: 100%;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: "Press Start 2P", cursive;
+			}
+
+			.container-canvas {
+				position: relative;
+				display: inline-block;
+			}
+			.container-health {
+				position: absolute;
+				display: flex;
+				width: 100%;
+				align-items: center;
+				padding: 0 20px;
+			}
+			/* middle */
+			.container-score {
+				background-color: black;
+				border: solid 4px white;
+
+				color: white;
+				height: 50px;
+				width: 100px;
+				flex-shrink: 0;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			/* both container */
+			.container-stats {
+				position: relative;
+				width: 100%;
+				border-right: 0;
+
+				border: 4px solid #fff;
+			}
+			.container-stats--left {
+				display: flex;
+				justify-content: flex-end;
+				border-right: 0;
+			}
+			.container-stats--right {
+				border-left: 0;
+
+			}
+			/* left */
+			.player-stats {
+				background-color: red;
+				height: 30px;
+				width: 100%;
+			}
+			.health__player {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 100%;
+			}
+			.health__enemy {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+			}
+			.health__player {
+				background-color: #818cf8;
+				transform: rotate(360deg);
+			}
+			.health__enemy {
+				background-color: #818cf8;
+			}
+			.div-result-label {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: red;
+				display: none;
+			}
+		</style>
+	</head>
+	<body style="background-color: rgb(59, 30, 0)">
+		<div class="container-canvas">
+			<div class="container-health">
+				<!-- left -->
+				<div class="container-stats container-stats--left">
+					<div class="player-stats"></div>
+					<div class="health__player" id="health--player"></div>
+				</div>
+				<!-- middle -->
+				<div class="container-score">10</div>
+				<!-- right -->
+				<div class="container-stats container-stats--right">
+					<div class="player-stats"></div>
+					<div class="health__enemy" id="health--enemy"></div>
+				</div>
+			</div>
+			<div class="div-result-label">Tie</div>
+			<canvas></canvas>
+		</div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+			integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script src="js/utlis.js"></script>
+		<script src="js/classes.js"></script>
+		<script src="index.js"></script>
+	</body>
+</html>
