@@ -6,29 +6,21 @@ Welcome to the world of competitive gaming! Introducing our brand new HTML Canva
 
 ## 🌟 Key Features
 
-- 🎉 Engaging gameplay with HTML5 canvas and [mention any libraries/frameworks].
+- 🎉 Engaging gameplay with HTML5 canvas, CSS and JavaScript.
 - 🕹️ Real-time multiplayer action for endless fun.
-- 🏆 Compete against players from around the world and climb the leaderboard.
-- 🚀 Responsive design that works seamlessly on all devices.
-- 🎵 Dynamic soundtrack and immersive sound effects.
+- 🏆 Compete against real player.
+- 🚀 Design that works seamlessly on all Computer.
 
 ## 🎯 How to Play
 
 1. Visit [the game link](https://your-game-url-on-netlify.com).
-2. Create or join a multiplayer room.
-3. [Briefly explain the basic controls or gameplay mechanics.]
+2. Start playing.
+3. [
+    Player 1: up-> w, left-> a, right-> d, attack: space
+    Player 2: up-> uparrow, left-> leftarrow, right-> rightarrow, attack: rightctrl.
+]
 
-## 🤝 Contributing
-
-We welcome contributors to help us improve the game! If you'd like to contribute, check out our [contribution guidelines](CONTRIBUTING.md).
-
-## 📷 In-Game Screenshots
-
-![Screenshot 1](screenshots/screenshot1.png)
-![Screenshot 2](screenshots/screenshot2.png)
-
-## 📝 License
-
-This project is licensed under the [License Name] License. See the [LICENSE](LICENSE) file for details.
+## 🤝 CInspiration
+I thanks the instructor CHRIS. https://www.youtube.com/@ChrisCourses
 
 Spread the word and start playing now! 🎮💥
