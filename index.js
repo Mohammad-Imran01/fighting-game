@@ -8,6 +8,10 @@ const playerHealth = document.getElementById("health--player");
 const liveScore = document.querySelector(".container-score");
 const resultLabel = document.querySelector(".div-result-label");
 
+
+
+// *****************music*********************
+
 // Canvas width, height, background
 canvas.width = 1024;
 canvas.height = 576;
@@ -133,13 +137,16 @@ enemy.draw();
 
 function animate() {
 	window.requestAnimationFrame(animate);
+
+	// music --------------------------
+	// music --------------------------
 	c.fillStyle = "black";
 	c.fillRect(0, 0, canvas.width, canvas.height);
 
 	background.update();
 	shop.update();
 	c.fillStyle = `rgba(255,255,255,0.15)`;
-	c.fillRect(0,0,canvas.width,canvas.height)
+	c.fillRect(0, 0, canvas.width, canvas.height)
 	player.update();
 	enemy.update();
 
@@ -181,29 +188,21 @@ function animate() {
 
 	// collision or attack player
 	if (
-		rectangularCollison({ rec1: player, rec2: enemy }) &&
-		player.isAttacking && player.framesCurrent === 4
-	) {
-		// enemy.health -= 20;
+		rectangularCollison({ rec1: player, rec2: enemy }) &&player.isAttacking && player.framesCurrent === 4) {
 		enemy.takeHit();
 		player.isAttacking = false;
-		// enemyHealth.style.width = enemy.health + "%";
 		gsap.to('#health--enemy', { width: enemy.health + "%" })
 	}
-	if (player.isAttacking && player.framesCurrent === 4)
-		player.isAttacking = false;
+	if (player.isAttacking && player.framesCurrent === 4) player.isAttacking = false;
+
 
 	// collision or attack enemy
 	if (rectangularCollison({ rec1: enemy, rec2: player }) && enemy.isAttacking && enemy.framesCurrent === 2) {
 		enemy.isAttacking = false;
-		// player.health -= 20;
 		player.takeHit();
-		// playerHealth.style.width = player.health + "%";
 		gsap.to('#health--player', { width: player.health + "%" })
-
 	}
-	if (enemy.isAttacking && enemy.framesCurrent === 2)
-		enemy.isAttacking = false;
+	if (enemy.isAttacking && enemy.framesCurrent === 2) enemy.isAttacking = false;
 
 
 	// Any player lost before timer
@@ -228,7 +227,8 @@ window.addEventListener("keydown", (e) => {
 				player.lastkey = "a";
 				break;
 			case "w":
-				player.velocity.y = -20;
+				if (player.velocity.y === 0)
+					player.velocity.y = -20;
 				break;
 			case " ":
 				player.attack();
@@ -246,7 +246,8 @@ window.addEventListener("keydown", (e) => {
 				enemy.lastkey = "ArrowLeft";
 				break;
 			case "ArrowUp":
-				enemy.velocity.y = -20;
+				if (enemy.velocity.y === 0)
+					enemy.velocity.y = -20;
 				break;
 			case "Control":
 				enemy.attack();

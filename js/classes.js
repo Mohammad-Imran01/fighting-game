@@ -111,7 +111,6 @@ class Fighter extends Sprite {
 			this.velocity.y = 0;
 			this.position.y = 330;
 		} else this.velocity.y += gravity;
-		console.log(this.position.y)
 	}
 	attack() {
 		this.switchSprite('attack1');
