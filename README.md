@@ -20,7 +20,7 @@ Welcome to the world of competitive gaming! Introducing our brand new HTML Canva
     Player 2: up-> uparrow, left-> leftarrow, right-> rightarrow, attack: rightctrl.
 ]
 
-## 🤝 CInspiration
+## 🤝 Inspiration
 I thanks the instructor CHRIS. https://www.youtube.com/@ChrisCourses
 
 Spread the word and start playing now! 🎮💥
