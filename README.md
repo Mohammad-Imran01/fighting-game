@@ -2,7 +2,7 @@
 
 Welcome to the world of competitive gaming! Introducing our brand new HTML Canvas Multiplayer Game, where you can challenge your friends and have a blast!
 
-![Gameplay Screenshot](screenshot.png)
+![Gameplay Screenshot](canvas-game-3.png)
 
 ## 🌟 Key Features
 
