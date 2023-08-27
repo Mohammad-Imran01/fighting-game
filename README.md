@@ -13,7 +13,7 @@ Welcome to the world of competitive gaming! Introducing our brand new HTML Canva
 
 ## 🎯 How to Play
 
-1. Visit [the game link](https://your-game-url-on-netlify.com).
+1. Visit [the game link](https://yaga-fighting-game.netlify.app).
 2. Start playing.
 3. Player 1: up-> w, left-> a, right-> d, attack: space
 4. Player 2: up-> uparrow, left-> leftarrow, right-> rightarrow, attack: rightctrl
